@@ -1,4 +1,17 @@
 /* ============================================
+   FONTS
+   ============================================ */
+@font-face { font-family: 'CustomFont'; src: url('/font/ultralight.otf') format('opentype'); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'CustomFont'; src: url('/font/thin.otf') format('opentype'); font-weight: 200; font-style: normal; }
+@font-face { font-family: 'CustomFont'; src: url('/font/light.otf') format('opentype'); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'CustomFont'; src: url('/font/regular.otf') format('opentype'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'CustomFont'; src: url('/font/medium.otf') format('opentype'); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'CustomFont'; src: url('/font/semibold.otf') format('opentype'); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'CustomFont'; src: url('/font/bold.otf') format('opentype'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'CustomFont'; src: url('/font/heavy.otf') format('opentype'); font-weight: 800; font-style: normal; }
+@font-face { font-family: 'CustomFont'; src: url('/font/black.otf') format('opentype'); font-weight: 900; font-style: normal; }
+
+/* ============================================
    DESIGN TOKENS — Aritro UI
    ============================================ */
 :root {
@@ -39,7 +52,7 @@
   --radius-full: 9999px;
 
   /* Typography */
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family: 'CustomFont', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-xs: 11px;
   --font-sm: 12px;
   --font-base: 13px;
