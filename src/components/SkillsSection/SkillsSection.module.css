@@ -72,6 +72,35 @@
   line-height: 1;
 }
 
+.techBadge {
+  padding: 8px;
+  min-width: 36px;
+  height: 36px;
+  justify-content: center;
+  gap: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.techBadge .badgeLabel {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 0;
+}
+
+.techBadge:hover {
+  padding: 8px 14px;
+  gap: 8px;
+}
+
+.techBadge:hover .badgeLabel {
+  max-width: 200px;
+  opacity: 1;
+  margin-left: 4px;
+}
+
 .badgeLabel {
   font-size: 12px;
   font-weight: 700;

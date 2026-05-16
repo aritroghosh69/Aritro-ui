@@ -12,9 +12,9 @@ const rows = [
     id: 'tech',
     label: 'Tech Skills',
     items: [
-      { icon: <img src="/mysql.png" alt="MySQL" width="16" height="16" style={{ objectFit: 'contain' }} />, label: 'MySQL', color: '#4a9eff', bg: 'rgba(74,158,255,0.15)' },
-      { icon: <img src="/python.png" alt="Python" width="16" height="16" style={{ objectFit: 'contain' }} />, label: 'Python', color: '#FFD43B', bg: 'rgba(255,212,59,0.15)' },
-      { icon: <img src="/java.png" alt="Java" width="16" height="16" style={{ objectFit: 'contain' }} />, label: 'Java', color: '#E8564B', bg: 'rgba(232,86,75,0.15)' },
+      { icon: <img src="/mysql.png" alt="MySQL" width="20" height="20" style={{ objectFit: 'contain' }} />, label: 'MySQL', color: '#4a9eff', bg: 'rgba(74,158,255,0.15)' },
+      { icon: <img src="/python.png" alt="Python" width="20" height="20" style={{ objectFit: 'contain' }} />, label: 'Python', color: '#FFD43B', bg: 'rgba(255,212,59,0.15)' },
+      { icon: <img src="/java.png" alt="Java" width="20" height="20" style={{ objectFit: 'contain' }} />, label: 'Java', color: '#E8564B', bg: 'rgba(232,86,75,0.15)' },
     ],
   },
   {
@@ -52,7 +52,7 @@ export default function SkillsSection() {
             {row.items.map((item) => (
               <div
                 key={item.label}
-                className={styles.badge}
+                className={`${styles.badge} ${row.id === 'tech' ? styles.techBadge : ''}`}
                 style={{ '--badge-bg': item.bg, '--badge-color': item.color }}
               >
                 <span className={styles.badgeIcon}>{item.icon}</span>
