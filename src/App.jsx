@@ -30,7 +30,7 @@ export default function App() {
           <img src="/hero.jpeg" alt="Aritro" className="nav-avatar" />
           <div className="nav-links">
             <a href="#" onClick={(e) => { e.preventDefault(); setShowHireMe(false); }} className={`nav-link ${!showHireMe ? 'active' : ''}`}>Home</a>
-            <a href="#portfolio" className="nav-link">Projects</a>
+            <a href="#portfolio" className="nav-link">Contact</a>
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function App() {
 
           <div className="section-animate section-header" id="portfolio">
             <span className="section-number">04</span>
-            <span className="section-title">Network.</span>
+            <span className="section-title">Connect.</span>
           </div>
 
           {/* Portfolio links */}
@@ -102,10 +102,18 @@ export default function App() {
 
             {/* Footer */}
             <div className="section-animate footer-made-by">
-              <span>This portfolio was made by</span>
-              <a href="https://theuicompany.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <img src="/ui.png" alt="The UI Company" className="footer-logo" />
-              </a>
+              <div className="footer-left">
+                <span className="footer-name">Aritro Ghosh</span>
+                <span className="footer-copy">© {new Date().getFullYear()} · All rights reserved</span>
+              </div>
+              <div className="footer-right">
+                <span>Made with</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#e74c3c" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span>by</span>
+                <a href="https://theuicompany.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <img src="/ui.png" alt="The UI Company" className="footer-logo" />
+                </a>
+              </div>
             </div>
           </div>
         )}
