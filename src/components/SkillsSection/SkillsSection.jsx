@@ -30,7 +30,9 @@ const rows = [
     items: [
       { icon: <img src="https://flagcdn.com/w40/in.png" width="16" alt="India" />, label: 'Hindi', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
       { icon: <img src="https://flagcdn.com/w40/gb.png" width="16" alt="UK" />, label: 'English', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
-      { icon: <img src="https://flagcdn.com/w40/us.png" width="16" alt="US" />, label: 'American', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
+      { icon: <img src="https://flagcdn.com/w40/in.png" width="16" alt="India" />, label: 'Bengali', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
+      { icon: <img src="https://flagcdn.com/w40/in.png" width="16" alt="India" />, label: 'Odia', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
+      { icon: <img src="https://flagcdn.com/w40/in.png" width="16" alt="India" />, label: 'Marathi', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
     ],
   },
 ]
