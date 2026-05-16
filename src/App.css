@@ -173,6 +173,12 @@
   align-items: stretch;
 }
 
+.mid-grid > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 /* Staggered entrance animation */
 .section-animate {
   opacity: 0;

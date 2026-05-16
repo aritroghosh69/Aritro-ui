@@ -7,6 +7,7 @@ const experiences = [
     title: 'Essentia Pro',
     role: 'Co-Founder & Business Manager',
     period: '2024 – Present',
+    url: 'https://essentia-pro.vercel.app/',
     points: [
       'Co-founded and managed a growing healthcare and hygiene brand with a team-driven approach.',
       'Handled sales, marketing, and day-to-day business operations.',
@@ -28,7 +29,14 @@ export default function ExperienceSection() {
             <div className={styles.titleWrapper}>
               {exp.logo && <img src={exp.logo} alt={exp.title} className={styles.logo} />}
               <div>
-                <h2 className={styles.title}>{exp.title}</h2>
+                <div className={styles.titleRow}>
+                  <h2 className={styles.title}>{exp.title}</h2>
+                  {exp.url && (
+                    <a href={exp.url} target="_blank" rel="noopener noreferrer" className={styles.titleLink} aria-label="Visit website">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </a>
+                  )}
+                </div>
                 <p className={styles.role}>{exp.role}</p>
               </div>
             </div>

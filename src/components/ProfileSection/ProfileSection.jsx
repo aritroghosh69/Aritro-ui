@@ -49,16 +49,9 @@ export default function ProfileSection() {
           </p>
           <div className={styles.meta}>
             <span className={styles.metaItem}>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
-              26 years
-            </span>
-            <span className={styles.metaDot} />
-            <span className={styles.metaItem}>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
-              India
+              Kolkata, West Bengal, India
             </span>
-            <span className={styles.metaDot} />
-            <a href="tel:+916289613838" className={styles.metaLink}>+91 6289613838</a>
           </div>
           <div className={styles.socialIcons}>
             {socialLinks.map((link) => (
