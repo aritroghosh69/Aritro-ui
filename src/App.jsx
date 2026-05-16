@@ -4,7 +4,7 @@ import ExperienceSection from './components/ExperienceSection/ExperienceSection'
 import SkillsSection from './components/SkillsSection/SkillsSection'
 import EducationSection from './components/EducationSection/EducationSection'
 import PortfolioSection from './components/PortfolioSection/PortfolioSection'
-
+import CertificationsSection from './components/CertificationsSection/CertificationsSection'
 import HireMePage from './components/HireMePage/HireMePage'
 import './App.css'
 
@@ -40,9 +40,6 @@ export default function App() {
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="none" style={{ color: '#fbbf24', marginLeft: '4px' }}><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
             <span>5</span>
           </a>
-          <button className="nav-icon-btn" aria-label="Toggle dark mode">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          </button>
           <button className="nav-hire-btn" onClick={() => setShowHireMe(true)}>Hire Me</button>
         </div>
       </nav>
@@ -92,6 +89,15 @@ export default function App() {
           {/* Portfolio links */}
           <div className="section-animate">
             <PortfolioSection />
+          </div>
+
+          <div className="section-animate section-header" id="certifications">
+            <span className="section-number">05</span>
+            <span className="section-title">Certifications.</span>
+          </div>
+
+          <div className="section-animate">
+            <CertificationsSection />
           </div>
 
             {/* Footer */}
