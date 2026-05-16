@@ -15,7 +15,7 @@ export default function ProfileSection() {
       <div className={styles.topRow}>
         <div className={styles.avatarWrap}>
           <img
-            src="https://api.dicebear.com/7.x/notionists/svg?seed=aritro&backgroundColor=1a1a1a&radius=16"
+            src="/hero.jpeg"
             alt="Aritro avatar"
             className={styles.avatar}
           />
