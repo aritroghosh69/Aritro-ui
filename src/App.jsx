@@ -4,7 +4,7 @@ import ExperienceSection from './components/ExperienceSection/ExperienceSection'
 import SkillsSection from './components/SkillsSection/SkillsSection'
 import EducationSection from './components/EducationSection/EducationSection'
 import PortfolioSection from './components/PortfolioSection/PortfolioSection'
-import DetailsSection from './components/DetailsSection/DetailsSection'
+
 import HireMePage from './components/HireMePage/HireMePage'
 import './App.css'
 
@@ -61,10 +61,7 @@ export default function App() {
             <ProfileSection />
           </div>
 
-          {/* Details */}
-          <div className="section-animate">
-            <DetailsSection />
-          </div>
+
 
           <div className="section-animate section-header" id="experience">
             <span className="section-number">02</span>
