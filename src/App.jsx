@@ -15,7 +15,7 @@ export default function App() {
   // Staggered entrance animation for each section
   useEffect(() => {
     if (showHireMe) return; // Don't animate if showing hire me
-    
+
     const sections = containerRef.current?.querySelectorAll('.section-animate')
     sections?.forEach((el, i) => {
       el.style.animationDelay = `${i * 80}ms`
@@ -57,36 +57,36 @@ export default function App() {
               <ProfileSection />
             </div>
 
-          {/* Experience row */}
-          <div className="section-animate">
-            <ExperienceSection />
-          </div>
+            {/* Experience row */}
+            <div className="section-animate">
+              <ExperienceSection />
+            </div>
 
-          {/* Middle: Skills (left) + Education (right) */}
-          <div className="section-animate mid-grid">
-            <SkillsSection />
-            <EducationSection />
-          </div>
+            {/* Middle: Skills (left) + Education (right) */}
+            <div className="section-animate mid-grid">
+              <SkillsSection />
+              <EducationSection />
+            </div>
 
-          {/* Portfolio links */}
-          <div className="section-animate">
-            <PortfolioSection />
-          </div>
+            {/* Portfolio links */}
+            <div className="section-animate">
+              <PortfolioSection />
+            </div>
 
-          {/* Details */}
-          <div className="section-animate">
-            <DetailsSection />
-          </div>
+            {/* Details */}
+            <div className="section-animate">
+              <DetailsSection />
+            </div>
 
-          {/* Footer */}
-          <div className="section-animate footer-made-by">
-            <span>This portfolio was made by</span>
-            <a href="https://theuicompany.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <img src="/ui.png" alt="The UI Company" className="footer-logo" />
-            </a>
+            {/* Footer */}
+            <div className="section-animate footer-made-by">
+              <span>This portfolio was made by</span>
+              <a href="https://theuicompany.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <img src="/ui.png" alt="The UI Company" className="footer-logo" />
+              </a>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </main>
     </div>
   )
