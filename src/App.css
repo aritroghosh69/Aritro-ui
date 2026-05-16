@@ -205,28 +205,54 @@
 .footer-made-by {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 16px 0;
-  font-size: 13px;
-  color: #888;
-  font-weight: 500;
+  justify-content: space-between;
+  padding: 20px 0 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: 8px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.footer-made-by a {
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e0e0e0;
+  letter-spacing: -0.01em;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #444;
+  font-weight: 400;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #444;
+}
+
+.footer-right a {
   display: inline-flex;
   align-items: center;
-  opacity: 0.8;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
 }
 
-.footer-made-by a:hover {
+.footer-right a:hover {
   opacity: 1;
-  transform: translateY(-2px);
 }
 
 .footer-logo {
-  height: 24px;
+  height: 18px;
   width: auto;
   object-fit: contain;
 }
