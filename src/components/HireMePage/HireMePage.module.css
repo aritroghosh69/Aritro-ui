@@ -71,10 +71,6 @@
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.inputGroup textarea {
-  resize: none;
-}
-
 .inputGroup input:focus,
 .inputGroup select:focus,
 .inputGroup textarea:focus {

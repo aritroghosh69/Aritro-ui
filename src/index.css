@@ -122,12 +122,6 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: var(--sp-5);
-  transition: border-color var(--transition), box-shadow var(--transition);
-}
-
-.card:hover {
-  border-color: var(--border-hover);
-  box-shadow: var(--shadow-hover);
 }
 
 /* ============================================
@@ -145,13 +139,7 @@ body {
   font-weight: 500;
   color: var(--text-primary);
   white-space: nowrap;
-  transition: background var(--transition), border-color var(--transition);
   cursor: default;
-}
-
-.pill:hover {
-  background: var(--bg-pill-hover);
-  border-color: var(--border-hover);
 }
 
 .pill-icon {
