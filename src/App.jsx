@@ -98,12 +98,17 @@ export default function App() {
           </div>
 
             {/* Footer */}
-            <div className="section-animate footer-made-by">
-              <span>Designed &amp; built by</span>
-              <a href="https://theuicompany.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <img src="/ui.png" alt="The UI Company" className="footer-logo" />
-              </a>
-            </div>
+            <footer className="section-animate footer-main">
+              <div className="footer-copyright">
+                © {new Date().getFullYear()} Aritro Ghosh
+              </div>
+              <div className="footer-credit">
+                <span>Designed &amp; built by</span>
+                <a href="https://theuicompany.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <img src="/ui.png" alt="The UI Company" className="footer-logo" />
+                </a>
+              </div>
+            </footer>
           </div>
         )}
       </main>
