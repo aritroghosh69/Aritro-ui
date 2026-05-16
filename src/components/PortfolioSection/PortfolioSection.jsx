@@ -78,10 +78,7 @@ export default function PortfolioSection() {
             </a>
           </div>
         </div>
-        <div className={styles.ctaDecor} aria-hidden="true">
-          <div className={styles.decor1} />
-          <div className={styles.decor2} />
-        </div>
+
       </div>
 
       {/* Social grid */}
