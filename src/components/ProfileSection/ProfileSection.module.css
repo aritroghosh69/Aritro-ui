@@ -35,12 +35,35 @@
 }
 
 .bioText {
-  font-size: 15px;
-  font-weight: 500;
-  font-style: italic;
-  line-height: 1.65;
-  color: #e8e8e8;
+  color: #ccc;
+  font-size: 14.5px;
+  line-height: 1.5;
   letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.actionRow {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hireBtn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-family: inherit;
+}
+
+.hireBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .interestsCard {
