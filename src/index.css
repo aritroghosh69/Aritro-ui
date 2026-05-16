@@ -16,12 +16,12 @@
    ============================================ */
 :root {
   /* Colors */
-  --bg-primary: #0c0c0c;
-  --bg-card: #161616;
-  --bg-card-hover: #1c1c1c;
-  --bg-pill: #1f1f1f;
-  --bg-pill-hover: #2a2a2a;
-  --bg-tag: #242424;
+  --bg-primary: #000000;
+  --bg-card: #0a0a0a;
+  --bg-card-hover: #111111;
+  --bg-pill: #161616;
+  --bg-pill-hover: #1e1e1e;
+  --bg-tag: #1a1a1a;
 
   --text-primary: #f0f0f0;
   --text-secondary: #8a8a8a;

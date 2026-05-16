@@ -50,6 +50,14 @@
 }
 
 .linkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 1;
+}
+
+.linkIcon img {
+  user-select: none;
+  -webkit-user-drag: none;
 }
