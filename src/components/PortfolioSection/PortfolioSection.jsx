@@ -67,7 +67,7 @@ export default function PortfolioSection() {
         <div className={styles.ctaContent}>
           <h3 className={styles.ctaTitle}>Let's work together</h3>
           <p className={styles.ctaText}>
-            Have a project in mind or want to discuss opportunities? I'm always open to new conversations and collaborations.
+            Aspiring management professional open to discussing strategic growth, marketing insights, or business operations. Let's connect and drive impactful results together.
           </p>
           <div className={styles.socialIcons}>
             {socialLinks.map((link) => (
