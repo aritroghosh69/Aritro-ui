@@ -63,22 +63,19 @@ const DaIcon = () => (
 
 const rows = [
   {
-    id: 'design',
-    label: 'Design Tools',
+    id: 'tech',
+    label: 'Tech Skills',
     items: [
-      { icon: <AiIcon />, label: 'Ai', color: '#FF9A00', bg: 'rgba(255,154,0,0.15)' },
-      { icon: <PsIcon />, label: 'Ps', color: '#31A8FF', bg: 'rgba(49,168,255,0.15)' },
-      { icon: <IdIcon />, label: 'Id', color: '#FF3366', bg: 'rgba(255,51,102,0.15)' },
-      { icon: <XdIcon />, label: 'Xd', color: '#FF61F6', bg: 'rgba(255,97,246,0.15)' },
+      { icon: <img src="/mysql.png" alt="MySQL" width="16" height="16" style={{ objectFit: 'contain' }} />, label: 'MySQL', color: '#4a9eff', bg: 'rgba(74,158,255,0.15)' },
+      { icon: <img src="/python.png" alt="Python" width="16" height="16" style={{ objectFit: 'contain' }} />, label: 'Python', color: '#FFD43B', bg: 'rgba(255,212,59,0.15)' },
+      { icon: '☕', label: 'Java', color: '#E8564B', bg: 'rgba(232,86,75,0.15)' },
     ],
   },
   {
-    id: 'editing',
-    label: 'Editing Tools',
+    id: 'other',
+    label: 'Other Skills',
     items: [
-      { icon: <AeIcon />, label: 'Ae', color: '#9999FF', bg: 'rgba(153,153,255,0.15)' },
-      { icon: <PrIcon />, label: 'Pr', color: '#EA77FF', bg: 'rgba(234,119,255,0.15)' },
-      { icon: <DaIcon />, label: 'Da', color: '#E8564B', bg: 'rgba(232,86,75,0.15)' },
+      { icon: '🚗', label: 'Driving', color: '#3ecf8e', bg: 'rgba(62,207,142,0.15)' },
     ],
   },
   {
@@ -87,7 +84,6 @@ const rows = [
     items: [
       { icon: '🇮🇳', label: 'Hindi', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
       { icon: '🇬🇧', label: 'English', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
-      { icon: '🇺🇸', label: 'American', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
     ],
   },
 ]

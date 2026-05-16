@@ -2,25 +2,20 @@ import styles from './EducationSection.module.css'
 
 const education = [
   {
-    id: 'highschool',
-    title: 'High School',
-    field: 'Humanities',
-    institution: 'Delhi Cantonment, India',
-    year: '2017',
-  },
-  {
-    id: 'diploma',
-    title: 'Diploma',
-    field: 'Animation and Graphic Design',
-    institution: 'Delhi, India',
-    year: '2017–18',
-  },
-  {
     id: 'graduation',
-    title: 'Graduation',
-    field: 'Bachelor of Fine Arts',
-    institution: 'IGNOU Delhi, India',
-    year: '2017–21',
+    logo: '/techno.png',
+    title: 'Bachelor of Business Admin',
+    field: 'BBA',
+    institution: 'Techno Main Saltlake, MAKAUT',
+    year: 'Present',
+  },
+  {
+    id: 'highschool',
+    logo: '/central moder.png',
+    title: 'High School',
+    field: '10th & 12th (Higher Secondary)',
+    institution: 'Central Modern School, Baranagar',
+    year: 'Completed',
   },
 ]
 
@@ -31,7 +26,10 @@ export default function EducationSection() {
         <div key={edu.id} className={`card ${styles.card}`}>
           <div className={styles.row}>
             <div className={styles.info}>
-              <h3 className={styles.title}>{edu.title}</h3>
+              <div className={styles.titleRow}>
+                {edu.logo && <img src={edu.logo} alt="" className={styles.logo} />}
+                <h3 className={styles.title}>{edu.title}</h3>
+              </div>
               <p className={styles.field}>{edu.field}</p>
               <p className={styles.institution}>{edu.institution}</p>
             </div>

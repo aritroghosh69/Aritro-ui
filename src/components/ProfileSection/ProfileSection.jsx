@@ -1,11 +1,12 @@
 import styles from './ProfileSection.module.css'
 
-const bio = `My name is Aritro — a self-taught logo/brand designer with 4+ years of experience creating modern, clean, and minimal brands that make a lasting impression.`
+const bio = `My name is Aritro Ghosh — an aspiring management professional with a strong foundation in business administration and a passion for driving strategic growth and operational excellence.`
 
-const interests = [
-  { icon: '🎮', label: 'Gaming' },
-  { icon: '🎬', label: 'Film Making' },
-  { icon: '✈️', label: 'Traveling' },
+const targetRoles = [
+  { icon: '📈', label: 'Marketing' },
+  { icon: '💼', label: 'Sales' },
+  { icon: '🚀', label: 'Business Dev' },
+  { icon: '👥', label: 'HR' },
 ]
 
 export default function ProfileSection() {
@@ -25,12 +26,12 @@ export default function ProfileSection() {
         </div>
       </div>
 
-      {/* Interests row */}
+      {/* Roles row */}
       <div className={`card ${styles.interestsCard}`}>
-        <span className={styles.label}>Interests</span>
+        <span className={styles.label}>Target Roles</span>
         <div className={styles.divider} />
         <div className={styles.pills}>
-          {interests.map((item) => (
+          {targetRoles.map((item) => (
             <span key={item.label} className="pill">
               <span className="pill-icon">{item.icon}</span>
               {item.label}
