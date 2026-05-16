@@ -27,7 +27,11 @@ export default function ExperienceSection() {
         <div key={exp.id} className={`card ${styles.card}`}>
           <div className={styles.header}>
             <div className={styles.titleWrapper}>
-              {exp.logo && <img src={exp.logo} alt={exp.title} className={styles.logo} />}
+              {exp.logo && (
+                <div className={styles.logoContainer}>
+                  <img src={exp.logo} alt={exp.title} className={styles.logo} />
+                </div>
+              )}
               <div>
                 <div className={styles.titleRow}>
                   <h2 className={styles.title}>{exp.title}</h2>
