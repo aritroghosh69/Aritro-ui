@@ -68,22 +68,22 @@ const rows = [
     items: [
       { icon: <img src="/mysql.png" alt="MySQL" width="16" height="16" style={{ objectFit: 'contain' }} />, label: 'MySQL', color: '#4a9eff', bg: 'rgba(74,158,255,0.15)' },
       { icon: <img src="/python.png" alt="Python" width="16" height="16" style={{ objectFit: 'contain' }} />, label: 'Python', color: '#FFD43B', bg: 'rgba(255,212,59,0.15)' },
-      { icon: '☕', label: 'Java', color: '#E8564B', bg: 'rgba(232,86,75,0.15)' },
+      { icon: <img src="/java.png" alt="Java" width="16" height="16" style={{ objectFit: 'contain' }} />, label: 'Java', color: '#E8564B', bg: 'rgba(232,86,75,0.15)' },
     ],
   },
   {
     id: 'other',
     label: 'Other Skills',
     items: [
-      { icon: '🚗', label: 'Driving', color: '#3ecf8e', bg: 'rgba(62,207,142,0.15)' },
+      { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3v-6l2-5h14l2 5v6h-2"/><path d="M5 11h14"/></svg>, label: 'Driving', color: '#3ecf8e', bg: 'rgba(62,207,142,0.15)' },
     ],
   },
   {
     id: 'languages',
     label: 'Languages',
     items: [
-      { icon: '🇮🇳', label: 'Hindi', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
-      { icon: '🇬🇧', label: 'English', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
+      { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>, label: 'Hindi', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
+      { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>, label: 'English', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
     ],
   },
 ]
