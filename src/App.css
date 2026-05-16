@@ -132,7 +132,37 @@
   max-width: 740px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 48px;
+  margin-bottom: 8px;
+}
+
+.bento-card > .section-header:first-child {
+  margin-top: 0;
+}
+
+.section-number {
+  font-size: 13px;
+  color: #888;
+  font-weight: 600;
+  transform: translateY(-14px);
+  font-family: monospace;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.03em;
 }
 
 /* Middle two-column section: Skills | Education */

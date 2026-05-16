@@ -57,26 +57,41 @@ export default function App() {
               <ProfileSection />
             </div>
 
-            {/* Experience row */}
-            <div className="section-animate">
-              <ExperienceSection />
-            </div>
+            <div className="section-animate section-header" id="experience">
+            <span className="section-number">01</span>
+            <span className="section-title">Experience.</span>
+          </div>
 
-            {/* Middle: Skills (left) + Education (right) */}
-            <div className="section-animate mid-grid">
-              <SkillsSection />
-              <EducationSection />
-            </div>
+          {/* Experience row */}
+          <div className="section-animate">
+            <ExperienceSection />
+          </div>
 
-            {/* Portfolio links */}
-            <div className="section-animate">
-              <PortfolioSection />
-            </div>
+          <div className="section-animate section-header">
+            <span className="section-number">02</span>
+            <span className="section-title">Expertise.</span>
+          </div>
 
-            {/* Details */}
-            <div className="section-animate">
-              <DetailsSection />
-            </div>
+          {/* Middle: Skills (left) + Education (right) */}
+          <div className="section-animate mid-grid">
+            <SkillsSection />
+            <EducationSection />
+          </div>
+
+          <div className="section-animate section-header" id="portfolio">
+            <span className="section-number">03</span>
+            <span className="section-title">Network.</span>
+          </div>
+
+          {/* Portfolio links */}
+          <div className="section-animate">
+            <PortfolioSection />
+          </div>
+
+          {/* Details */}
+          <div className="section-animate">
+            <DetailsSection />
+          </div>
 
             {/* Footer */}
             <div className="section-animate footer-made-by">
