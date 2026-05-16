@@ -39,7 +39,11 @@ export default function EducationSection() {
           <div className={styles.row}>
             <div className={styles.info}>
               <div className={styles.titleRow}>
-                {edu.logo && <img src={edu.logo} alt="" className={styles.logo} />}
+                {edu.logo && (
+                  <div className={styles.logoContainer}>
+                    <img src={edu.logo} alt="" className={styles.logo} />
+                  </div>
+                )}
                 <h3 className={styles.title}>{edu.title}</h3>
               </div>
               <p className={styles.field}>{edu.field}</p>
