@@ -53,7 +53,6 @@ export default function SkillsSection() {
               <div
                 key={item.label}
                 className={`${styles.badge} ${row.id === 'tech' ? styles.techBadge : ''}`}
-                style={{ '--badge-bg': item.bg, '--badge-color': item.color }}
               >
                 <span className={styles.badgeIcon}>{item.icon}</span>
                 <span className={styles.badgeLabel}>{item.label}</span>
