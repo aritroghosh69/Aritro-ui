@@ -24,7 +24,7 @@ export default function ExperienceSection() {
   return (
     <div className={styles.grid}>
       {experiences.map((exp) => (
-        <div key={exp.id} className={`card ${styles.card}`}>
+        <div key={exp.id} className={styles.card}>
           <div className={styles.header}>
             <div className={styles.titleWrapper}>
               {exp.logo && (

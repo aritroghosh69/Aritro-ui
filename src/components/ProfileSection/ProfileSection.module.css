@@ -13,11 +13,8 @@
 .avatarWrap {
   flex-shrink: 0;
   width: 160px;
-  height: 160px;
   border-radius: 20px;
   overflow: hidden;
-  background: #1a1a1a;
-  border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .avatar {
@@ -31,27 +28,27 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+  gap: 12px;
   min-height: 160px;
-  padding: 20px 22px;
+  padding: 8px 0;
 }
 
 .name {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 800;
   color: #fff;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   margin: 0;
   line-height: 1.1;
 }
 
 .bioText {
   color: #888;
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 14.5px;
+  line-height: 1.65;
   letter-spacing: -0.01em;
   margin: 0;
+  max-width: 540px;
 }
 
 .meta {
@@ -93,7 +90,9 @@
 .socialIcons {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
+  margin-top: auto;
+  padding-top: 12px;
 }
 
 .iconLink {
@@ -109,8 +108,8 @@
 }
 
 .iconLink svg {
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
 }
 
 .iconLink:hover {
@@ -123,7 +122,9 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 14px 20px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 12px;
 }
 
 .label {

@@ -42,7 +42,7 @@ export default function ProfileSection() {
         <div className={styles.avatarWrap}>
           <img src="/hero.jpeg" alt="Aritro avatar" className={styles.avatar} />
         </div>
-        <div className={`card ${styles.bioCard}`}>
+        <div className={styles.bioCard}>
           <h2 className={styles.name}>Aritro Ghosh</h2>
           <p className={styles.bioText}>
             An aspiring management professional with a strong foundation in business administration and a passion for driving strategic growth and operational excellence.
@@ -71,7 +71,7 @@ export default function ProfileSection() {
       </div>
 
       {/* Roles row */}
-      <div className={`card ${styles.interestsCard}`}>
+      <div className={styles.interestsCard}>
         <span className={styles.label}>Target Roles</span>
         <div className={styles.divider} />
         <div className={styles.pills}>
