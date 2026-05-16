@@ -63,6 +63,25 @@ const DaIcon = () => (
 
 const rows = [
   {
+    id: 'design',
+    label: 'Design Tools',
+    items: [
+      { icon: <AiIcon />, label: 'Ai', color: '#FF9A00', bg: 'rgba(255,154,0,0.15)' },
+      { icon: <PsIcon />, label: 'Ps', color: '#31A8FF', bg: 'rgba(49,168,255,0.15)' },
+      { icon: <IdIcon />, label: 'Id', color: '#FF3366', bg: 'rgba(255,51,102,0.15)' },
+      { icon: <XdIcon />, label: 'Xd', color: '#FF61F6', bg: 'rgba(255,97,246,0.15)' },
+    ],
+  },
+  {
+    id: 'editing',
+    label: 'Editing Tools',
+    items: [
+      { icon: <AeIcon />, label: 'Ae', color: '#9999FF', bg: 'rgba(153,153,255,0.15)' },
+      { icon: <PrIcon />, label: 'Pr', color: '#EA77FF', bg: 'rgba(234,119,255,0.15)' },
+      { icon: <DaIcon />, label: 'Da', color: '#E8564B', bg: 'rgba(232,86,75,0.15)' },
+    ],
+  },
+  {
     id: 'tech',
     label: 'Tech Skills',
     items: [
@@ -82,8 +101,9 @@ const rows = [
     id: 'languages',
     label: 'Languages',
     items: [
-      { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>, label: 'Hindi', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
-      { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>, label: 'English', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
+      { icon: <img src="https://flagcdn.com/w40/in.png" width="16" alt="India" />, label: 'Hindi', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
+      { icon: <img src="https://flagcdn.com/w40/gb.png" width="16" alt="UK" />, label: 'English', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
+      { icon: <img src="https://flagcdn.com/w40/us.png" width="16" alt="US" />, label: 'American', color: '#f0f0f0', bg: 'rgba(255,255,255,0.08)' },
     ],
   },
 ]
