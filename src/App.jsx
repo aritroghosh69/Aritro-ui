@@ -29,9 +29,9 @@ export default function App() {
         <div className="nav-left">
           <img src="/hero.jpeg" alt="Aritro" className="nav-avatar" />
           <div className="nav-links">
-            <a href="#" className="nav-link active">Home</a>
-            <a href="#" className="nav-link">Projects</a>
-            <a href="#" className="nav-link">Blog</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); setShowHireMe(false); }} className={`nav-link ${!showHireMe ? 'active' : ''}`}>Home</a>
+            <a href="#portfolio" className="nav-link">Projects</a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
           </div>
         </div>
         <div className="nav-right">
@@ -69,7 +69,7 @@ export default function App() {
 
           <div className="section-animate section-header">
             <span className="section-number">02</span>
-            <span className="section-title">Expertise.</span>
+            <span className="section-title">About Me.</span>
           </div>
 
           {/* Middle: Skills (left) + Education (right) */}
