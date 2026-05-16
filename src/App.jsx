@@ -47,6 +47,14 @@ export default function App() {
         <div className="section-animate">
           <DetailsSection />
         </div>
+
+        {/* Footer */}
+        <div className="section-animate footer-made-by">
+          <span>This portfolio was made by</span>
+          <a href="https://theuicompany.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="/ui.png" alt="The UI Company" className="footer-logo" />
+          </a>
+        </div>
       </div>
     </main>
   )

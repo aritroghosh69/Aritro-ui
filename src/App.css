@@ -49,6 +49,36 @@
   }
 }
 
+/* Footer */
+.footer-made-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+}
+
+.footer-made-by a {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-made-by a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.footer-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .mid-grid {
