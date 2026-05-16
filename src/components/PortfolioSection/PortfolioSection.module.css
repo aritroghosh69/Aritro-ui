@@ -8,7 +8,7 @@
 .ctaCard {
   position: relative;
   overflow: hidden;
-  padding: 100px 24px;
+  padding: 140px 24px 100px 24px;
   background: #000;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
