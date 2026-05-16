@@ -18,38 +18,10 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  max-width: 420px;
-}
-
-.ctaBadge {
-  display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(62, 207, 142, 0.12);
-  border: 1px solid rgba(62, 207, 142, 0.25);
-  color: #3ecf8e;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 999px;
-  width: fit-content;
-}
-
-.ctaBadge::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #3ecf8e;
-  animation: pulse 2s ease infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.8); }
+  text-align: center;
+  gap: 12px;
+  width: 100%;
 }
 
 .ctaTitle {
@@ -62,31 +34,55 @@
 }
 
 .ctaText {
-  font-size: 13.5px;
-  color: #777;
-  line-height: 1.65;
+  font-size: 14px;
+  color: #888;
+  line-height: 1.6;
   margin: 0;
+  max-width: 480px;
 }
 
-.ctaBtn {
+.ctaBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.ctaBtnPrimary {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   background: #fff;
   color: #000;
   font-size: 13px;
   font-weight: 700;
   padding: 10px 20px;
-  border-radius: 999px;
+  border-radius: 8px;
   text-decoration: none;
-  width: fit-content;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-family: inherit;
+  transition: transform 0.2s ease;
 }
 
-.ctaBtn:hover {
+.ctaBtnPrimary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+}
+
+.ctaBtnSecondary {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.ctaBtnSecondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* decorative blobs */

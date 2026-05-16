@@ -62,20 +62,21 @@ export default function PortfolioSection() {
   return (
     <div className={styles.wrapper}>
       {/* CTA Card */}
+      {/* CTA Card */}
       <div className={`card ${styles.ctaCard}`}>
         <div className={styles.ctaContent}>
-          <div className={styles.ctaBadge}>Open to Opportunities</div>
-          <h3 className={styles.ctaTitle}>Let's build something<br />together.</h3>
+          <h3 className={styles.ctaTitle}>Let's work together</h3>
           <p className={styles.ctaText}>
-            Whether you're looking for a driven management professional, a business collaborator, or just want to connect — my inbox is always open.
+            Have a project in mind or want to discuss opportunities? I'm always open to new conversations and collaborations.
           </p>
-          <a href="mailto:gmampi502@gmail.com" className={styles.ctaBtn}>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            Send me an email
-          </a>
+          <div className={styles.ctaBtns}>
+            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" className={styles.ctaBtnPrimary}>
+              Schedule a Call →
+            </a>
+            <a href="mailto:gmampi502@gmail.com" className={styles.ctaBtnSecondary}>
+              Send an Email
+            </a>
+          </div>
         </div>
         <div className={styles.ctaDecor} aria-hidden="true">
           <div className={styles.decor1} />
@@ -101,7 +102,7 @@ export default function PortfolioSection() {
               <span className={styles.cardDesc}>{link.desc}</span>
             </div>
             <svg className={styles.arrow} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+              <line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" />
             </svg>
           </a>
         ))}
