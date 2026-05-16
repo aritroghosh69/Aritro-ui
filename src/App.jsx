@@ -24,14 +24,21 @@ export default function App() {
   }, [showHireMe])
 
   return (
-    <main className="app-shell">
+    <main className="app-shell" ref={containerRef}>
+      <nav className="navbar section-animate">
+        <span className="navbar-logo">Aritro Ghosh</span>
+        <button className="nav-hire-btn" onClick={() => setShowHireMe(true)}>
+          Hire Me
+        </button>
+      </nav>
+
       {showHireMe ? (
         <HireMePage onBack={() => setShowHireMe(false)} />
       ) : (
-        <div ref={containerRef} className="bento-card">
+        <div className="bento-card">
           {/* Profile + Bio + Interests */}
           <div className="section-animate">
-            <ProfileSection onHireClick={() => setShowHireMe(true)} />
+            <ProfileSection />
           </div>
 
           {/* Experience row */}

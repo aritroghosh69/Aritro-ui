@@ -42,30 +42,6 @@
   margin: 0;
 }
 
-.actionRow {
-  margin-top: 16px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hireBtn {
-  background: #fff;
-  color: #000;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  font-family: inherit;
-}
-
-.hireBtn:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
 .interestsCard {
   display: flex;
   align-items: center;

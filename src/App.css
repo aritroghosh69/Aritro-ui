@@ -2,12 +2,54 @@
    APP LAYOUT
    ============================================ */
 .app-shell {
-  width: 100%;
   min-height: 100vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 40px 16px 60px;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 16px 24px;
+  background: rgba(30, 30, 30, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  margin-bottom: 24px;
+  opacity: 0;
+}
+
+.navbar-logo {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.nav-hire-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-family: inherit;
+}
+
+.nav-hire-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 /* The outer bento card container */
