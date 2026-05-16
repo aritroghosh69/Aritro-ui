@@ -43,48 +43,42 @@
   max-width: 500px;
 }
 
-.ctaBtns {
+.socialIcons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 16px;
   margin-top: 12px;
 }
 
-.ctaBtnPrimary {
-  display: inline-flex;
+.socialIconLink {
+  display: flex;
   align-items: center;
-  background: #fff;
-  color: #000;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 14px 28px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.ctaBtnPrimary:hover {
-  transform: translateY(-1px);
-  opacity: 0.9;
-}
-
-.ctaBtnSecondary {
-  display: inline-flex;
-  align-items: center;
-  background: transparent;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 14px 28px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-
-.ctaBtnSecondary:hover {
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #888;
+  transition: all 0.2s ease;
+}
+
+.socialIconLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.socialIconLink img {
+  filter: grayscale(1) brightness(0.8);
+  transition: all 0.2s ease;
+}
+
+.socialIconLink:hover img {
+  filter: grayscale(0) brightness(1);
+  transform: scale(1.1);
 }
 
 .ctaDecor {

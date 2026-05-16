@@ -69,41 +69,25 @@ export default function PortfolioSection() {
           <p className={styles.ctaText}>
             Have a project in mind or want to discuss opportunities? I'm always open to new conversations and collaborations.
           </p>
-          <div className={styles.ctaBtns}>
-            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" className={styles.ctaBtnPrimary}>
-              Schedule a Call →
-            </a>
-            <a href="mailto:gmampi502@gmail.com" className={styles.ctaBtnSecondary}>
-              Send an Email
-            </a>
+          <div className={styles.socialIcons}>
+            {socialLinks.map((link) => (
+              <a
+                key={link.id}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialIconLink}
+                aria-label={link.label}
+              >
+                {link.icon}
+              </a>
+            ))}
           </div>
         </div>
 
       </div>
 
-      {/* Social grid */}
-      <div className={styles.grid}>
-        {socialLinks.map((link) => (
-          <a
-            key={link.id}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-            style={{ '--accent': link.color, '--bg': link.bg, '--border': link.border }}
-          >
-            <div className={styles.cardIcon}>{link.icon}</div>
-            <div className={styles.cardInfo}>
-              <span className={styles.cardLabel}>{link.label}</span>
-              <span className={styles.cardHandle}>{link.handle}</span>
-              <span className={styles.cardDesc}>{link.desc}</span>
-            </div>
-            <svg className={styles.arrow} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" />
-            </svg>
-          </a>
-        ))}
-      </div>
+
     </div>
   )
 }
