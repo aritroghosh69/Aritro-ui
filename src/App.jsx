@@ -52,13 +52,22 @@ export default function App() {
           <HireMePage onBack={() => setShowHireMe(false)} />
         ) : (
           <div className="bento-card">
-            {/* Profile + Bio + Interests */}
-            <div className="section-animate">
-              <ProfileSection />
-            </div>
-
-            <div className="section-animate section-header" id="experience">
+          <div className="section-animate section-header" id="about">
             <span className="section-number">01</span>
+            <span className="section-title">About Me.</span>
+          </div>
+
+          <div className="section-animate">
+            <ProfileSection />
+          </div>
+
+          {/* Details */}
+          <div className="section-animate">
+            <DetailsSection />
+          </div>
+
+          <div className="section-animate section-header" id="experience">
+            <span className="section-number">02</span>
             <span className="section-title">Experience.</span>
           </div>
 
@@ -68,8 +77,8 @@ export default function App() {
           </div>
 
           <div className="section-animate section-header">
-            <span className="section-number">02</span>
-            <span className="section-title">About Me.</span>
+            <span className="section-number">03</span>
+            <span className="section-title">Expertise.</span>
           </div>
 
           {/* Middle: Skills (left) + Education (right) */}
@@ -79,18 +88,13 @@ export default function App() {
           </div>
 
           <div className="section-animate section-header" id="portfolio">
-            <span className="section-number">03</span>
+            <span className="section-number">04</span>
             <span className="section-title">Network.</span>
           </div>
 
           {/* Portfolio links */}
           <div className="section-animate">
             <PortfolioSection />
-          </div>
-
-          {/* Details */}
-          <div className="section-animate">
-            <DetailsSection />
           </div>
 
             {/* Footer */}
