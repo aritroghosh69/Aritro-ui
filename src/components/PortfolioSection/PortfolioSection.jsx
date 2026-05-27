@@ -10,7 +10,7 @@ const socialLinks = [
     color: '#0077b5',
     bg: 'rgba(0,119,181,0.1)',
     border: 'rgba(0,119,181,0.25)',
-    href: 'https://linkedin.com',
+    href: 'https://linkedin.com/in/aritro-ghosh2005',
   },
   {
     id: 'instagram',

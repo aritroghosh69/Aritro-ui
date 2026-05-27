@@ -18,5 +18,5 @@ If you are developing a production application, we recommend using TypeScript wi
 # Aritro-ui
 
 ## Contact
-- LinkedIn: [Aritro Ghosh](https://linkedin.com/in/aritro-ghosh-ghosh-70110a1b6)
+- LinkedIn: [Aritro Ghosh](https://linkedin.com/in/aritro-ghosh2005)
 - Email: gmampi502@gmail.com
