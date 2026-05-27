@@ -148,12 +148,26 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .topRow {
     flex-direction: column;
   }
   .avatarWrap {
     width: 100%;
+    height: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  .avatarWrap {
     height: 200px;
+  }
+  .interestsCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .divider {
+    display: none;
   }
 }
