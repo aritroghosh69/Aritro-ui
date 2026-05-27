@@ -24,6 +24,15 @@ export default function App() {
     })
   }, [showHireMe])
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMobileMenuOpen]);
+
   return (
     <div className="app-container" ref={containerRef}>
       <nav className="navbar-top">

@@ -293,33 +293,59 @@
 }
 
 .mobile-dropdown {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;
-  background: #000000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   display: none;
   flex-direction: column;
-  padding: 16px 24px;
-  gap: 16px;
+  padding: 100px 32px 40px;
+  gap: 20px;
   z-index: 40;
+  overflow-y: auto;
+  animation: menuFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .mobile-dropdown .nav-link {
-  font-size: 16px;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 28px;
+  font-weight: 700;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-dropdown .nav-link:hover {
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 .mobile-dropdown .mobile-github {
   justify-content: center;
-  padding: 10px;
+  padding: 16px;
+  font-size: 16px;
+  margin-top: 24px;
 }
 
 .mobile-dropdown .mobile-hire {
   width: 100%;
-  padding: 12px;
+  padding: 18px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
